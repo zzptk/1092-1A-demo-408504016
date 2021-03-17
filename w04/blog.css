@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 15px solid #bdc3c7;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.data {
+  color: #417bbd;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 20px 0;
+}
+
+.post {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #5e6469;
+  padding-bottom: 1rem;
+}
+
+.post quote {
+  border-left: 5px solid;
+  padding-left: 80%;
+}
