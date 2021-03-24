@@ -14,7 +14,7 @@ body {
 
 #container {
   width: 90%;
-  border: 2px solid rgb(117, 0, 128);
+  border: 2px solid purple;
   margin: 1.5rem auto;
 }
 
@@ -54,6 +54,19 @@ body {
 aside {
   width: 20%;
   height: 40rem;
+  background-color: rgb(255, 255, 0);
+}
+
+aside li {
+  padding: 0 0.5rem 0.5rem;
+}
+
+aside li a {
+  background-color: red;
+  padding: 0.5rem;
+}
+
+aside li a:hover {
   background-color: rgb(255, 255, 0);
 }
 
