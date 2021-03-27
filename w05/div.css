@@ -14,14 +14,14 @@ body {
 
 #container {
   width: 90%;
-  border: 2px solid purple;
+  border: 2px solid rgb(0, 183, 255);
   margin: 1.5rem auto;
 }
 
 #heading {
   width: 100%;
   height: 7rem;
-  background-color: rgb(130, 45, 170);
+  background-color: rgb(0, 217, 255);
   text-align: center;
 }
 
@@ -54,7 +54,7 @@ body {
 aside {
   width: 20%;
   height: 40rem;
-  background-color: rgb(255, 255, 0);
+  background-color: rgb(0, 247, 255);
 }
 
 aside li {
@@ -62,12 +62,12 @@ aside li {
 }
 
 aside li a {
-  background-color: red;
+  background-color: darksalmon;
   padding: 0.5rem;
 }
 
 aside li a:hover {
-  background-color: rgb(255, 255, 0);
+  background-color: crimson;
 }
 
 #section {
@@ -79,5 +79,20 @@ aside li a:hover {
 #footer {
   width: 100%;
   height: 7rem;
-  background-color: rgb(255, 0, 255);
+  background-color: rgb(92, 171, 190);
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
