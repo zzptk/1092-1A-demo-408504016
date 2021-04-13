@@ -5,7 +5,7 @@ div {
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
     background-color: #2196F3;
     padding: 10px;
   }
@@ -13,14 +13,22 @@ div {
 .container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 30px;
+  }
+
+  .logo, .article {
+    width: 20vw;
+  }
+  
+  .header, .aside {
+    width: 77vw;
   }
 
 nav {
   height: 90%;
   margin: 10px;
-  background-color: crimson;
+  background-color: darkcyan;
 }
 
 .playvideo {
@@ -37,11 +45,13 @@ nav {
   width: 100%;
   position: absolute;
 }
+.section-nav ul{
+	padding: 0;
+}
 
 .section-nav li {
     display: inline-block;
     width: 15%;
-    margin: 0;
 }
 
 .section-nav li img {
@@ -61,19 +71,24 @@ footer {
     background-color: #2196F3;
     padding: 10px;
   }
+
+  nav {
+    height: 80%;
+    margin: 0 auto;
+    background-color: darkcyan;
+  }
+
   .section-nav li {
-    display: table-row-group;
-    width: 100%;
-    margin: 10px;
-    padding: 5px;
+    display: inline-block;
+    width: 18%;
 }
-.section-nav li img {
-  width: 50%;
+
+.logo, .article {
+  width: 100vw;
 }
-nav {
-  height: 80%;
-  margin: 0;
-  background-color: crimson;
+
+.header, .aside {
+  width: 100vw;
 }
-  
+
 }

@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./grid.css">
+	<script type="text/javascript">
+		var slideIndex=1;
+		bian(slideIndex);
+		
+		function currentVedio(n){
+			bian(slideIndex=n);
+		}
+		
+		function bian(n){
+			var i;
+			var vedios=document.getElementsByClassName("showVedio")
+			var dots=document.getElementsByClassName("dot")
+			if(n>vedios.length){
+				slideIndex=1;
+			}
+			for(i=0;i<vedios.length;i++){
+				vedios[i].style.display="none"
+			}
+			for(i=0;i<dots.length;i++){
+				dots[i].className=dots[i].className.replace("active")
+			}
+			vedios[slideIndex-1].style.display="block"
+			dots[slideIndex-1].className+="active"
+		}
+	</script>
 </head>
 <body>
     <div class="container">
@@ -20,29 +45,29 @@
         <div class="aside">
             <section>
                 <div class="playvideo">
-                <div class="video1" id="video1">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RechrtUxfQc" title="video1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="showVedio video1" id="video1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RechrtUxfQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="video2" id="video2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MRWX49Furew" title="video2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="showVedio video2" id="video2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MRWX49Furew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="video3" id="video3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/METhdbL_iMw" title="vidoe3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="showVedio video3" id="video3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/METhdbL_iMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="video4" id="video4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZyDbq-lEKTo" title="video4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="showVedio video4" id="video4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZyDbq-lEKTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="video5" id="vidoe5">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NlsrJbVvjaA" title="video5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="showVedio video5" id="video5">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NlsrJbVvjaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 </div>
                 <div class="section-nav">
                         <ul>
-                            <li><a href="#video1"><img src="https://i.ytimg.com/vi/RechrtUxfQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEcu6N_w1RNUXxbOFeUJ2nDx3pmQ" alt="淡江大戲1"></a></li>
-                            <li><a href="#video2"><img src="https://i.ytimg.com/vi/MRWX49Furew/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7bJhhclIuz7omJMPxHOY37jo4IA" alt="淡江大戲2"></a></li>
-                            <li><a href="#video3"><img src="https://i.ytimg.com/vi/METhdbL_iMw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCazkVpPiInVs9UyGnT63r_029p_A" alt="淡江大戲3"></a></li>
-                            <li><a href="#video4"><img src="https://i.ytimg.com/vi/ZyDbq-lEKTo/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2dCGA6ig6Ce-RJNCcnFbnM9z2Fg" alt="淡江大戲4"></a></li>
-                            <li><a href="#video5"><img src="https://i.ytimg.com/vi/NlsrJbVvjaA/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD-s0QMIcd6e3HhPI1rP_z--tlM2Q" alt="淡江大戲5"></a></li>
+                            <li><img class="dot" onclick="currentVedio(1)" src="https://i.ytimg.com/vi/RechrtUxfQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEcu6N_w1RNUXxbOFeUJ2nDx3pmQ" alt="淡江大戲1"></li>
+                            <li><img class="dot" onclick="currentVedio(2)" src="https://i.ytimg.com/vi/MRWX49Furew/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7bJhhclIuz7omJMPxHOY37jo4IA" alt="淡江大戲2"></li>
+                            <li><img class="dot" onclick="currentVedio(3)" src="https://i.ytimg.com/vi/METhdbL_iMw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCazkVpPiInVs9UyGnT63r_029p_A" alt="淡江大戲3"></li>
+                            <li><img class="dot" onclick="currentVedio(4)" src="https://i.ytimg.com/vi/ZyDbq-lEKTo/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2dCGA6ig6Ce-RJNCcnFbnM9z2Fg" alt="淡江大戲4"></li>
+                            <li><img class="dot" onclick="currentVedio(5)" src="https://i.ytimg.com/vi/NlsrJbVvjaA/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD-s0QMIcd6e3HhPI1rP_z--tlM2Q" alt="淡江大戲5"></li>
                         </ul>
                 </div>
             </section>
