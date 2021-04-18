@@ -1,0 +1,23 @@
+        <li onclick="changeColor(1)">
+          <a href="#">Link 1</a>
+        </li>
+        <li onclick="changeColor(2)">
+          <a href="#">Link 2</a>
+        </li>
+        <li onclick="changeColor(3)">
+          <a href="#">Link 2</a>
+        </li>
+        <li onclick="changeImg(1)">
+          <a href="#">Img1</a>
+        </li>
+        <li onclick="changeImg(2)">
+          <a href="#">Img2</a>
+        </li>
+        <li onclick="changeImg(3)">
+          <a href="#">Img3</a>
+        </li>
+        <li onclick="changeImg(4)">
+          <a href="#">Img4</a>
+        </li>
+        <li onclick="changeImg(5)">
+          <a href="#">Img5</a>
