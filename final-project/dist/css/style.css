@@ -164,7 +164,7 @@ header .logoBar .logoIcon a {
 
 .showCase .big {
   width: 75%;
-  background: url("/dist/img/big.jpg") no-repeat;
+  background: url("../img/big.jpg") no-repeat;
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
@@ -218,19 +218,19 @@ header .logoBar .logoIcon a {
 }
 
 .showCase .small .s1 {
-  background: url("/dist/img/small1.jpg") no-repeat;
+  background: url("../img/small1.jpg") no-repeat;
 }
 
 .showCase .small .s2 {
-  background: url("/dist/img/small2.jpg") no-repeat;
+  background: url("../img/small2.jpg") no-repeat;
 }
 
 .showCase .small .s3 {
-  background: url("/dist/img/small3.jpg") no-repeat;
+  background: url("../img/small3.jpg") no-repeat;
 }
 
 .showCase .small .s4 {
-  background: url("/dist/img/small4.jpg") no-repeat;
+  background: url("../img/small4.jpg") no-repeat;
 }
 
 section {
